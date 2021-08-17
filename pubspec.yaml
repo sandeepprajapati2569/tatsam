@@ -1,0 +1,121 @@
+name: tatsam
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+30
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.0
+  scoped_model: ^1.0.1
+  sliver_tools: ^0.1.10+1
+  flutter_bloc: ^5.0.1
+  equatable:
+  # shared_preferences: ^0.5.8
+  shared_preferences: 0.5.12+4
+  #  introduction_screen: ^1.0.9
+  loading:
+    git:
+      url: git://github.com/leonzone/loading.git
+      path: loading
+      ref: 8f5a63f
+
+  #  sqflite:
+  #  image_picker: ^0.6.7+4
+  #  flutter_exif_rotation: ^0.2.7
+  #  path_provider: ^1.6.11
+
+  http: ^0.12.2
+  path: any
+  share: ^0.6.4+3
+  rxdart: ^0.24.1
+  jwt_decoder: ^1.0.3
+  intl: ^0.16.1
+  flutter_cupertino_date_picker:
+    git:
+      url: https://github.com/imshashank/flutter-cupertino-date-picker # Repo
+      ref: master # Branch name
+  #  calendar_vertical_scroll:
+  #    git:
+  #      url: https://github.com/yogeshymarathe/flutter_vertical_calendar # Repo
+  #      ref: master # Branch name
+  cached_network_image: ^2.2.0+1
+  permission_handler: ^5.0.1+1
+  shimmer: ^1.0.1
+  package_info: ^0.4.1
+  device_info: ^1.0.0
+  catcher: ^0.3.23  # Catcher is Flutter plugin which automatically catches error/exceptions and handle them
+  dio: ^3.0.10
+  sentry: ^3.0.0+1
+  connectivity: ^3.0.6
+  flutter_svg: ^0.22.0
+  sqflite: ^2.0.0+3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^4.1.0
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - environments/
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: WorkSans
+      fonts:
+        - asset: assets/fonts/WorkSans-Regular.ttf
+        - asset: assets/fonts/WorkSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/WorkSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/WorkSans-Bold.ttf
+          weight: 700
+
+    - family: Segoe
+      fonts:
+        - asset: assets/fonts/Segoe-Regular.ttf
+        - asset: assets/fonts/Segoe-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Segoe-SemiBold.ttf
+          weight: 500
+        - asset: assets/fonts/Segoe-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Segoe-Bold.ttf
+          weight: 700
+
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
